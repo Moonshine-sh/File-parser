@@ -17,7 +17,7 @@ public class ParserService {
 
     private final Composite composite;
     private final String path;
-    private final Pattern paragraphPattern = Pattern.compile("\\n?[\\d\\w,.:;?!\\-()'\\\"\\ ]*\\n?");
+    private final Pattern paragraphPattern = Pattern.compile("\\n?[\\d\\w,.:;?!\\-()'\\\"\\ ]+\\n?");
     private final Pattern sentencePattern = Pattern.compile("[\\d\\w,:;\\-()'\\\"\\ ]*[.!?]");
     private final Pattern wordPattern = Pattern.compile("[\\w']+|[-.,:;?!\\\"()]");
     private final Pattern charPattern = Pattern.compile(".");
